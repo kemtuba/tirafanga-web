@@ -38,21 +38,27 @@ export default function HomePage() {
       <section className="py-20">
           <div className="container mx-auto px-6">
               <h2 className="text-4xl font-serif font-bold text-center">Our Impact</h2>
-              <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-8 ...">
-    <div>
+              <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-8 text-center max-w-4xl mx-auto">
+    {/* Cell 1 */}
+    <div className="text-center">
         <p className="text-4xl md:text-5xl font-bold text-brand-red">10+</p>
         <p className="mt-2 text-brand-gray">Years in Ghana</p>
     </div>
-    {/* Apply the responsive font size to all 4 stat numbers */}
-    <div>
+    
+    {/* Cell 2 */}
+    <div className="text-center">
         <p className="text-4xl md:text-5xl font-bold text-brand-red">2000+</p>
         <p className="mt-2 text-brand-gray">Students Educated</p>
     </div>
-    <div>
+    
+    {/* Cell 3 */}
+    <div className="text-center">
         <p className="text-4xl md:text-5xl font-bold text-brand-red">5+</p>
         <p className="mt-2 text-brand-gray">Community Projects</p>
     </div>
-    <div>
+    
+    {/* Cell 4 */}
+    <div className="text-center">
         <p className="text-4xl md:text-5xl font-bold text-brand-red">10,000+</p>
         <p className="mt-2 text-brand-gray">Lives Improved</p>
     </div>
@@ -69,7 +75,7 @@ export default function HomePage() {
             {/* Program Card 1 */}
             <div className="bg-white p-8 rounded-lg shadow-md flex flex-col">
               <Briefcase className="w-12 h-12 text-brand-red" />
-              <h3 className="text-2xl font-serif font-bold mt-4">Global Star Leadership Academy</h3>
+              <h3 className="text-2xl font-serif font-bold mt-4">Rising Star Leadership Academy</h3>
               <p className="mt-2 text-brand-gray flex-grow">Our K-8 school provides quality education to children in rural Ghana, focusing on critical thinking and leadership skills.</p>
               <Button variant="outline" className="mt-6 self-start" asChild><Link href="/programs">Learn More</Link></Button>
             </div>
