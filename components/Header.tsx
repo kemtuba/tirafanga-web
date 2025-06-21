@@ -1,3 +1,5 @@
+"use client"
+
 // IMPORTANT: Add useState to your React import
 import { useState } from 'react';
 import Link from 'next/link';
