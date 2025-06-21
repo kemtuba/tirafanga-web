@@ -11,7 +11,7 @@ export default function HomePage() {
       <section className="bg-brand-red text-white">
         <div className="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-5xl md:text-6xl font-serif font-bold leading-tight">A Familiar Way Forward</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight">A Familiar Way Forward</h1>
             <p className="mt-4 text-xl text-red-100">Sustainable Agriculture and Education in Ghana.</p>
             <div className="mt-8">
               <Button size="lg" variant="outlineWhite" asChild>
@@ -38,24 +38,25 @@ export default function HomePage() {
       <section className="py-20">
           <div className="container mx-auto px-6">
               <h2 className="text-4xl font-serif font-bold text-center">Our Impact</h2>
-              <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-4xl mx-auto">
-                  <div>
-                      <p className="text-5xl font-bold text-brand-red">10+</p>
-                      <p className="mt-2 text-brand-gray">Years in Ghana</p>
-                  </div>
-                   <div>
-                      <p className="text-5xl font-bold text-brand-red">2000+</p>
-                      <p className="mt-2 text-brand-gray">Students Educated</p>
-                  </div>
-                   <div>
-                      <p className="text-5xl font-bold text-brand-red">5+</p>
-                      <p className="mt-2 text-brand-gray">Community Projects</p>
-                  </div>
-                   <div>
-                      <p className="text-5xl font-bold text-brand-red">10,000+</p>
-                      <p className="mt-2 text-brand-gray">Lives Improved</p>
-                  </div>
-              </div>
+              <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-8 ...">
+    <div>
+        <p className="text-4xl md:text-5xl font-bold text-brand-red">10+</p>
+        <p className="mt-2 text-brand-gray">Years in Ghana</p>
+    </div>
+    {/* Apply the responsive font size to all 4 stat numbers */}
+    <div>
+        <p className="text-4xl md:text-5xl font-bold text-brand-red">2000+</p>
+        <p className="mt-2 text-brand-gray">Students Educated</p>
+    </div>
+    <div>
+        <p className="text-4xl md:text-5xl font-bold text-brand-red">5+</p>
+        <p className="mt-2 text-brand-gray">Community Projects</p>
+    </div>
+    <div>
+        <p className="text-4xl md:text-5xl font-bold text-brand-red">10,000+</p>
+        <p className="mt-2 text-brand-gray">Lives Improved</p>
+    </div>
+</div>
           </div>
       </section>
 
