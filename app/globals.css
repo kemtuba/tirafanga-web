@@ -1,19 +1,5 @@
+/* FILE: app/globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Add your custom base styles inside the @layer base directive */
-@layer base {
-  body {
-    /* Your body styles go here */
-    /* For example: */
-    @apply bg-brand-cream text-brand-dark;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    /* Example: applying a default font-family to all headings */
-    @apply font-serif;
-  }
-  
-  /* Add any other custom base styles here */
-}

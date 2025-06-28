@@ -22,15 +22,12 @@ export const metadata: Metadata = {
   description: "Uplifting local communities through co-designed programs in education, business development, and food sovereignty.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfairDisplay.variable} ${cinzel.variable}`}>
-      <body className={`font-body bg-brand-cream text-text-dark`}> {/* Default styles applied */}
-        <Header /> {/* Assumes your Navbar is inside Header */}
+      {/* Ensure the className has the correct text color: text-text-dark */}
+      <body className={`font-body bg-brand-cream text-text-dark`}>
+        <Header />
         <main>{children}</main>
         <Footer />
       </body>
