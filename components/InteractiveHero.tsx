@@ -24,22 +24,6 @@ export default function InteractiveHero() {
         {/* REMOVED the off-brand blue blob */}
       </div>
 
-      {/* Floating Particles */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(15)].map((_, i) => (
-          <div
-            key={i}
-            // CHANGE: Using brand-gold for particles
-            className="absolute w-2 h-2 bg-brand-gold rounded-full opacity-30 animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${3 + Math.random() * 3}s`,
-            }}
-          />
-        ))}
-      </div>
 
       <div className="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Text Content */}
