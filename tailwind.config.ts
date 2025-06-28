@@ -1,3 +1,4 @@
+// FILE: tailwind.config.js
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,17 +10,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'brand-red': '#D9534F',
-        'brand-cream': '#FDF8F0',
-        'brand-dark': '#3A3A3A',
-        'brand-gray': '#6C6C6C',
+        'brand-green': '#2f5823',
+        'brand-gold': '#f1c27d',
+        'brand-cream': '#fcf9f4',
+        'text-dark': '#374151',
       },
       fontFamily: {
-        serif: ['Lora', 'serif'],
-        sans: ['Inter', 'sans-serif'],
+        heading: ['var(--font-playfair-display)', 'serif'],
+        body: ['var(--font-cinzel)', 'serif'],
       },
     },
   },
   plugins: [],
 };
 export default config;
+
