@@ -78,8 +78,8 @@ export default function HomePage() {
             <Quote className="mx-auto w-12 h-12 text-brand-gold" />
             <blockquote className="mt-6">
                 <p className="font-heading text-3xl text-brand-green leading-snug">
-                  "Tirafanga did not just give us resources; they partnered with us. Our children now have a future we could only dream of."
-                </p>
+  &ldquo;Tirafanga did not just give us resources; they partnered with us. Our children now have a future we could only dream of.&rdquo;
+</p>
             </blockquote>
             <cite className="mt-6 block font-body text-lg text-text-dark not-italic">
               — Ama Serwaa, Community Elder
