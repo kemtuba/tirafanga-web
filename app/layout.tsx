@@ -1,20 +1,21 @@
 // FILE: app/layout.tsx
 import type { Metadata } from "next";
-import { Playfair_Display, Cinzel } from "next/font/google"; // Correct fonts imported
+import { Playfair_Display, Cinzel } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
+// --- CHANGE #1 ---
+import { Navbar } from "@/components/Navbar"; // Import Navbar instead of Header
 import Footer from "@/components/Footer";
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   display: 'swap',
-  variable: '--font-playfair-display', // CSS variable for headings
+  variable: '--font-playfair-display',
 });
 
 const cinzel = Cinzel({
   subsets: ["latin"],
   display: 'swap',
-  variable: '--font-cinzel', // CSS variable for body
+  variable: '--font-cinzel',
 });
 
 export const metadata: Metadata = {
@@ -25,13 +26,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfairDisplay.variable} ${cinzel.variable}`}>
-      {/* Ensure the className has the correct text color: text-text-dark */}
       <body className={`font-body bg-brand-cream text-text-dark`}>
-        <Header />
+        {/* --- CHANGE #2 --- */}
+        <Navbar /> {/* Use the Navbar component */}
         <main>{children}</main>
         <Footer />
       </body>
     </html>
   );
 }
-
