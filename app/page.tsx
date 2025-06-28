@@ -96,19 +96,19 @@ export default function HomePage() {
             {/* Program Cards updated with new styles */}
             <div className="bg-brand-cream p-8 rounded-lg shadow-sm flex flex-col">
               <Briefcase className="w-12 h-12 text-brand-green" />
-              <h3 className="font-heading text-2xl font-bold mt-4 text-brand-green">Rising Star Academy</h3>
+              <h3 className="font-heading text-2xl font-bold mt-4 text-brand-green">Rising Star Leaderhsip Academy</h3>
               <p className="mt-2 text-text-dark font-body flex-grow">Our K-8 school provides quality education, focusing on critical thinking and leadership skills.</p>
               <Button variant="outline" className="mt-6 self-start border-brand-green text-brand-green hover:bg-brand-green hover:text-white" asChild><Link href="/programs">Learn More</Link></Button>
             </div>
             <div className="bg-brand-cream p-8 rounded-lg shadow-sm flex flex-col">
               <Droplets className="w-12 h-12 text-brand-green" />
-              <h3 className="font-heading text-2xl font-bold mt-4 text-brand-green">Clean Water Distribution</h3>
+              <h3 className="font-heading text-2xl font-bold mt-4 text-brand-green">Mikobah</h3>
               <p className="mt-2 text-text-dark font-body flex-grow">We build and maintain clean water access points, ensuring communities have reliable access to safe water.</p>
               <Button variant="outline" className="mt-6 self-start border-brand-green text-brand-green hover:bg-brand-green hover:text-white" asChild><Link href="/programs">Learn More</Link></Button>
             </div>
             <div className="bg-brand-cream p-8 rounded-lg shadow-sm flex flex-col">
               <Leaf className="w-12 h-12 text-brand-green" />
-              <h3 className="font-heading text-2xl font-bold mt-4 text-brand-green">Farmer Economics</h3>
+              <h3 className="font-heading text-2xl font-bold mt-4 text-brand-green"> Good Cashew</h3>
               <p className="mt-2 text-text-dark font-body flex-grow">We help smallholder farmers develop sustainable businesses and access fair markets.</p>
               <Button variant="outline" className="mt-6 self-start border-brand-green text-brand-green hover:bg-brand-green hover:text-white" asChild><Link href="/programs">Learn More</Link></Button>
             </div>
@@ -116,6 +116,56 @@ export default function HomePage() {
         </div>
       </section>
       
+      {/* Get Involved Section */}
+      <section id="get-involved" className="py-20 bg-brand-cream">
+        <div className="container mx-auto px-6 text-center">
+          {/* Main heading updated with brand font and color */}
+          <h2 className="font-heading text-4xl font-bold text-brand-green">Get Involved</h2>
+          <p className="mt-4 max-w-3xl mx-auto text-lg text-text-dark">
+            Join us in our mission to create sustainable change in Ghana. There are many ways to contribute.
+          </p>
+          
+          {/* Cards updated for new branding */}
+          <div className="mt-12 grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-left">
+            
+            {/* Card 1: Donate */}
+            <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col">
+              <h3 className="font-heading text-2xl font-bold text-brand-green">Donate</h3>
+              <p className="mt-2 text-text-dark flex-grow">
+                Your contribution funds critical projects in education, water, and sustainable agriculture.
+              </p>
+              {/* Button updated to primary brand color */}
+              <Button className="mt-6 bg-brand-green text-white hover:bg-green-800 self-start" asChild>
+                <Link href="https://buy.stripe.com/your_link_here" target="_blank">Give Today</Link>
+              </Button>
+            </div>
+            
+            {/* Card 2: Volunteer */}
+            <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col">
+              <h3 className="font-heading text-2xl font-bold text-brand-green">Volunteer</h3>
+              <p className="mt-2 text-text-dark flex-grow">
+                Lend your skills and time, either remotely or in Ghana, to make a direct impact.
+              </p>
+              <Button className="mt-6 bg-brand-green text-white hover:bg-green-800 self-start" asChild>
+                <Link href="#contact">Contact Us</Link>
+              </Button>
+            </div>
+            
+            {/* Card 3: Partner */}
+            <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col">
+              <h3 className="font-heading text-2xl font-bold text-brand-green">Partner</h3>
+              <p className="mt-2 text-text-dark flex-grow">
+                We collaborate with organizations that share our vision for a self-sufficient future.
+              </p>
+              <Button className="mt-6 bg-brand-green text-white hover:bg-green-800 self-start" asChild>
+                <Link href="#contact">Inquire Now</Link>
+              </Button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form Section */}
       <section id="contact" className="py-20 bg-brand-cream">
         <div className="container mx-auto px-6">
