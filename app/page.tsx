@@ -27,7 +27,7 @@ export default function HomePage() {
           </div>
           <div className="h-96 w-full relative rounded-lg">
              <Image 
-               src="/ghana-community-smiling.jpg" // Replace with a high-quality, relevant image
+               src="/heroimage.png" // Replace with a high-quality, relevant image
                layout="fill"
                objectFit="cover"
                alt="Happy members of the Ghanaian community served by Tirafanga" 
